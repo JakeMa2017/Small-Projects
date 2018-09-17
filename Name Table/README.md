@@ -7,7 +7,7 @@ Compilers use a _name table_ to record information about things that have names,
 
 The table below shows a Java method mean that computes the integer average of the elements in an integer array a. For example, if mean is called on an array with elements 1, 2, and 3, then it returns 2, because (1 + 2 + 3) / 3 = 2. The table also shows what variables can be used in each line.
 
-
+![alt text](https://github.com/JakeMa2017/Small-Projects/blob/master/Name%20Table/Screenshot%202018-09-17%2018.05.45.png)
 
 In Java, a local variable can be used only after it is declared, and then only between a pair of braces `{` and `}`. The part of a program where a variable can be used is called a _scope_. For example, the method 'main' has four local variables: `a`, `t`, `k`, and `e`. The variable `a` can be used in the scope between lines 02–15, the variable `t` can be used in the scope between lines 04–15, the variable `k` can be used in the scope between lines 07–13, and the variable `e` can be used in the scope between lines 10–11.
 
