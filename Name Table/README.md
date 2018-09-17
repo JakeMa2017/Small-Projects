@@ -13,7 +13,7 @@ In Java, a local variable can be used only after it is declared, and then only b
 
 To record information about variables and their scopes, a compiler uses a name table. A name table can be implemented by using a stack whose elements are binary search trees (BST’s). Suppose that a compiler reads a method like 'mean' and translates it to machine code. For this assignment, we care about what actions the compiler performs on the name table when it reads open braces, declarations, variables, and closing braces.
 
-If the compiler sees an open brace '{;, then it enters a new scope. To do that, it pushes a new empty BST on top of the stack. The BST’s keys are 'String'’ s: the names of the variables that will be declared in the new scope. The BST’s values are unspecified objects that hold information about the variables. The BST on top of the stack records information about variables that are declared in the current scope.
+If the compiler sees an open brace '{';, then it enters a new scope. To do that, it pushes a new empty BST on top of the stack. The BST’s keys are 'String'’ s: the names of the variables that will be declared in the new scope. The BST’s values are unspecified objects that hold information about the variables. The BST on top of the stack records information about variables that are declared in the current scope.
 
 If the compiler sees a variable declaration, like 'int t', then it searches the BST on top of the stack to find out if the variable was already declared in the current scope. If it finds the variable, then it issues an error message, because you can’t declare a variable twice. Otherwise, the compiler adds the new variable to the top BST on the stack.
 
